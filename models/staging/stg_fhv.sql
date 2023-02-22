@@ -7,7 +7,7 @@ with tripdata as
   select *,
     row_number() over(partition by base_license, pickup_datetime) as rn
   from {{ source('staging','fhv') }}
-  where vendorid is not null
+  where base_license is not null
 )
 
 select
