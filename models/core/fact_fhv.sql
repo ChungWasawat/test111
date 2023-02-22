@@ -24,7 +24,7 @@ select
     fhv_data.pickup_datetime,
     fhv_data.dropoff_datetime,
     fhv_data.shared_ride_type,
-    fhv_data.shared_ride_description,
+    --fhv_data.shared_ride_description,
     fhv_data.shared_ride_base_license,
 from fhv_data
 inner join dim_zones as pickup_zone
