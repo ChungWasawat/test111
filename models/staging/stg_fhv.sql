@@ -23,7 +23,7 @@ select
 
     -- shared trip
     cast(SR_Flag as integer) as shared_ride_type,
-    -- {{ get_shared_ride_description(shared_ride_type) }} as shared_ride_description,
+    
     cast(Affiliated_base_number as string) as shared_ride_base_license
 
 from tripdata
